@@ -1,0 +1,22 @@
+[package]
+name = "terraforge"
+version = "0.1.0"
+edition = "2024" # ВАЖНО: меняем на 2024 для совместимости с MCRE
+
+[dependencies]
+eframe = "0.27"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rfd = "0.14"
+image = "0.24"
+[build-dependencies]
+winresource = "0.1" # <-- Библиотека для встраивания иконок
+[package.metadata.bundle]
+# Это для будущих сборок, но главное ниже:
+
+[[bin]]
+name = "terraforge"
+path = "src/main.rs"
+
+[profile.release]
+# ...

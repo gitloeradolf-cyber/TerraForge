@@ -1,0 +1,12 @@
+# Скомпилированные файлы
+/target
+
+# Локальные настройки лаунчера (они у каждого свои)
+launcher_config.json
+
+# Исходники Horizon (если не хочешь заливать 500 МБ на GitHub)
+/horizon-src
+
+# Временные файлы Windows
+Thumbs.db
+desktop.ini
